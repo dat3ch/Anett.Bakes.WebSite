@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: dat3ch/Anett.Bakes.WebSite
+  name: git-gateway
   branch: main
 
 media_folder: "images/portofolio"
