@@ -1,0 +1,48 @@
+backend:
+  name: github
+  repo: dat3ch/Anett.Bakes.WebSite
+  branch: main
+
+media_folder: "images/portofolio"
+public_folder: "/images/portofolio"
+
+collections:
+  - name: "portfolio"
+    label: "Portofoliu"
+    folder: "_portfolio"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Titlu (RO)", name: "title_ro", widget: "string" }
+      - { label: "Title (EN)", name: "title_en", widget: "string" }
+      - { label: "Categorie", name: "category", widget: "select", options: ["cakes", "pastries", "breads"] }
+      - { label: "Categorie (RO)", name: "category_ro", widget: "string" }
+      - { label: "Category (EN)", name: "category_en", widget: "string" }
+      - { label: "Descriere (RO)", name: "description_ro", widget: "text" }
+      - { label: "Description (EN)", name: "description_en", widget: "text" }
+      - { label: "Imagine", name: "image", widget: "image" }
+      - { label: "Instagram URL", name: "instagram", widget: "string", required: false }
+      - { label: "Ordine", name: "order", widget: "number", default: 0 }
+
+  - name: "settings"
+    label: "Setari Site"
+    files:
+      - label: "Despre"
+        name: "about"
+        file: "_data/about.json"
+        fields:
+          - { label: "Titlu (RO)", name: "title_ro", widget: "string" }
+          - { label: "Title (EN)", name: "title_en", widget: "string" }
+          - { label: "Subtitlu (RO)", name: "subtitle_ro", widget: "string" }
+          - { label: "Subtitle (EN)", name: "subtitle_en", widget: "string" }
+          - { label: "Descriere (RO)", name: "description_ro", widget: "text" }
+          - { label: "Description (EN)", name: "description_en", widget: "text" }
+
+      - label: "Contact"
+        name: "contact"
+        file: "_data/contact.json"
+        fields:
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "WhatsApp numar", name: "whatsapp", widget: "string" }
+          - { label: "Instagram URL", name: "instagram", widget: "string", required: false }
+          - { label: "Facebook URL", name: "facebook", widget: "string", required: false }
