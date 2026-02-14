@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Anett Bakes | Pastry Chef</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="author" content="Anett Bakes">
+	<meta name="keywords" content="pastry chef, custom cakes, pastries, cookies, wedding cakes, dessert catering, Anett Bakes">
+	<meta name="description" content="Anett Bakes - Pastry chef crafting custom cakes, pastries, and desserts for every occasion.">
+
+	<link rel="icon" type="image/svg+xml" href="images/icons/favicon.svg">
+	<link rel="icon" type="image/png" href="images/icons/favicon.png">
+	<link rel="apple-touch-icon" href="images/icons/favicon.png">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="css/vendor.css">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
+</head>
+
+<body>
+
+	<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+		<defs>
+			<symbol id="cake" viewBox="0 0 24 24">
+				<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+					<path d="M2 22h20M3 22v-5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v5"></path>
+					<path d="M3 17a4 4 0 0 0 4-2a4 4 0 0 0 4 2a4 4 0 0 0 4-2a4 4 0 0 0 4 2"></path>
+					<path d="M5 15v-2a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v2"></path>
+					<path d="M5 11a4 4 0 0 0 4-2a4 4 0 0 0 4 2a4 4 0 0 0 4-2"></path>
+					<path d="M7 11V9a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2M12 7V4"></path>
+					<circle cx="12" cy="3" r="1"></circle>
+				</g>
+			</symbol>
+			<symbol id="cookie" viewBox="0 0 24 24">
+				<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+					<path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10s10-4.477 10-10S17.523 2 12 2"></path>
+					<circle cx="8" cy="9" r="1" fill="currentColor"></circle>
+					<circle cx="13" cy="7" r="1" fill="currentColor"></circle>
+					<circle cx="15" cy="13" r="1" fill="currentColor"></circle>
+					<circle cx="10" cy="14" r="1" fill="currentColor"></circle>
+					<circle cx="7" cy="13" r="1" fill="currentColor"></circle>
+					<circle cx="12" cy="11" r="1" fill="currentColor"></circle>
+				</g>
+			</symbol>
+			<symbol id="cupcake" viewBox="0 0 24 24">
+				<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+					<path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10s10-4.477 10-10S17.523 2 12 2"></path>
+					<path d="M8 21.168V14l4-7l4 7v7.168"></path>
+					<path d="M8 14s1.127 1 2 1s2-1 2-1s1.127 1 2 1s2-1 2-1"></path>
+				</g>
+			</symbol>
+			<symbol id="heart" viewBox="0 0 24 24">
+				<path fill="currentColor"
+					d="M20.16 4.61A6.27 6.27 0 0 0 12 4a6.27 6.27 0 0 0-8.16 9.48l7.45 7.45a1 1 0 0 0 1.42 0l7.45-7.45a6.27 6.27 0 0 0 0-8.87Zm-1.41 7.46L12 18.81l-6.75-6.74a4.28 4.28 0 0 1 3-7.3a4.25 4.25 0 0 1 3 1.25a1 1 0 0 0 1.42 0a4.27 4.27 0 0 1 6 6.05Z">
+				</path>
+			</symbol>
+			<symbol id="gift" viewBox="0 0 24 24">
+				<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+					<rect width="18" height="14" x="3" y="8" rx="2"></rect>
+					<path d="M12 5a3 3 0 1 0-3 3m6 0a3 3 0 1 0-3-3m0 0v17m9-7H3"></path>
+				</g>
+			</symbol>
+			<symbol id="random-4" viewBox="0 0 24 24">
+				<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+					<path
+						d="M17 11.6V15a6 6 0 0 1-6 6H9a6 6 0 0 1-6-6v-3.4a.6.6 0 0 1 .6-.6h12.8a.6.6 0 0 1 .6.6M12 9c0-1 .714-2 2.143-2v0A2.857 2.857 0 0 0 17 4.143V3.5M8 9v-.5a3 3 0 0 1 3-3v0a2 2 0 0 0 2-2V3">
+					</path>
+					<path d="M16 11h2.5a2.5 2.5 0 0 1 0 5H17"></path>
+				</g>
+			</symbol>
+			<symbol id="random-7" viewBox="0 0 24 24">
+				<g fill="none" stroke="currentColor" stroke-width="1.5">
+					<path d="M3 10v9a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-9"></path>
+					<path stroke-miterlimit="16" d="M14.833 21v-6a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v6"></path>
+					<path
+						d="m21.818 9.364l-1.694-5.929A.6.6 0 0 0 19.547 3H15.5l.475 5.704a.58.58 0 0 0 .278.45c.39.233 1.152.663 1.747.846c1.016.313 2.5.2 3.346.096a.57.57 0 0 0 .472-.732Z">
+					</path>
+					<path
+						d="M14 10c.568-.175 1.288-.574 1.69-.812a.58.58 0 0 0 .28-.549L15.5 3h-7l-.47 5.639a.58.58 0 0 0 .28.55c.402.237 1.122.636 1.69.811c1.493.46 2.507.46 4 0Z">
+					</path>
+					<path
+						d="m3.876 3.435l-1.694 5.93a.57.57 0 0 0 .472.73c.845.105 2.33.217 3.346-.095c.595-.183 1.358-.613 1.747-.845a.58.58 0 0 0 .278-.451L8.5 3H4.453a.6.6 0 0 0-.577.435Z">
+					</path>
+				</g>
+			</symbol>
+			<symbol id="random-3" viewBox="0 0 24 24">
+				<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+					<path fill="currentColor"
+						d="M17 12.5a.5.5 0 1 0 0-1a.5.5 0 0 0 0 1m-5 0a.5.5 0 1 0 0-1a.5.5 0 0 0 0 1m-5 0a.5.5 0 1 0 0-1a.5.5 0 0 0 0 1">
+					</path>
+					<path
+						d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12c0 1.821.487 3.53 1.338 5L2.5 21.5l4.5-.838A9.96 9.96 0 0 0 12 22">
+					</path>
+				</g>
+			</symbol>
+			<symbol id="random-5" viewBox="0 0 24 24">
+				<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+					stroke-width="1.5"
+					d="M20 12v9.4a.6.6 0 0 1-.6.6H4.6a.6.6 0 0 1-.6-.6V12m17.4-5H2.6a.6.6 0 0 0-.6.6v3.8a.6.6 0 0 0 .6.6h18.8a.6.6 0 0 0 .6-.6V7.6a.6.6 0 0 0-.6-.6M12 22V7m0 0H7.5a2.5 2.5 0 1 1 0-5C11 2 12 7 12 7m0 0h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7">
+				</path>
+			</symbol>
+			<symbol id="arrow-cycle" viewBox="0 0 24 24">
+				<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+					<path
+						d="M22 12c0 6-4.39 10-9.806 10C7.792 22 4.24 19.665 3 16m-1-4C2 6 6.39 2 11.806 2C16.209 2 19.76 4.335 21 8">
+					</path>
+					<path d="m7 17l-4-1l-1 4M17 7l4 1l1-4"></path>
+				</g>
+			</symbol>
+			<symbol id="instagram" viewBox="0 0 15 15">
+				<path fill="none" stroke="currentColor"
+					d="M11 3.5h1M4.5.5h6a4 4 0 0 1 4 4v6a4 4 0 0 1-4 4h-6a4 4 0 0 1-4-4v-6a4 4 0 0 1 4-4Zm3 10a3 3 0 1 1 0-6a3 3 0 0 1 0 6Z">
+				</path>
+			</symbol>
+			<symbol id="facebook" viewBox="0 0 15 15">
+				<path fill="none" stroke="currentColor"
+					d="M7.5 14.5a7 7 0 1 1 0-14a7 7 0 0 1 0 14Zm0 0v-8a2 2 0 0 1 2-2h.5m-5 4h5"></path>
+			</symbol>
+		</defs>
+	</svg>
+
+	<div class="nav nav-overlay">
+		<div class="nav__content">
+			<ul class="nav__list">
+				<li class="nav__list-item active-nav"><a href="#billboard" class="hover-target" data-en="Home" data-ro="Acasă">Home</a></li>
+				<li class="nav__list-item"><a href="#about" class="hover-target" data-en="About" data-ro="Despre mine">About</a></li>
+				<li class="nav__list-item"><a href="#portfolio" class="hover-target" data-en="Portfolio" data-ro="Portofoliu">Portfolio</a></li>
+				<li class="nav__list-item"><a href="#services" class="hover-target" data-en="Services" data-ro="Servicii">Services</a></li>
+				<li class="nav__list-item"><a href="#contact" class="hover-target" data-en="Contact" data-ro="Contact">Contact</a></li>
+				</ul>
+		</div>
+	</div>
+
+	<header id="header">
+		<div class="header-wrap d-flex align-items-center justify-content-between p-3" data-aos="fade">
+			<div class="main-logo">
+				<a href="index.html"><img src="images/logo/logo_anett_bakes_black.png" alt="Anett Bakes" style="max-height: 50px;"></a>
+			</div>
+
+			<div class="d-flex align-items-center" style="gap: 3.5rem;">
+				<div class="lang-toggle">
+					<a href="#" class="lang-btn" data-lang="en" title="English"><img src="https://flagcdn.com/w40/gb.png" alt="EN" class="lang-flag"></a>
+					<a href="#" class="lang-btn active" data-lang="ro" title="Română"><img src="https://flagcdn.com/w40/ro.png" alt="RO" class="lang-flag"></a>
+				</div>
+				<nav id="navbar">
+					<input id="menu-toggle" type="checkbox" />
+					<label class="menu-btn" for="menu-toggle">
+						<span></span>
+					</label>
+				</nav>
+			</div>
+
+		</div>
+	</header>
+
+	<div id="billboard">
+		<div class="container-fluid">
+			<div class="row align-items-center py-5 py-lg-0">
+				<div class="col-md-6" data-aos="fade">
+					<img src="images/banner.png" class="img-fluid" alt="Anett - Pastry Chef">
+				</div>
+				<div class="col-md-6" data-aos="fade">
+					<div class="text-content">
+						<h2 class="display-1 text-center" style="line-height: 1.1;"><span data-en="Pastry Chef" data-ro="Cofetar">Pastry Chef</span><br><span style="font-size: 50%;">&</span><br><span data-en="Cake Artist" data-ro="Artist Torturi">Cake Artist</span></h2>
+						<h2 class="py-3 text-center" style="color: #9b59b6; font-size: 1.8rem;" data-en="Crafting sweet moments" data-ro="Creăm momente dulci">Crafting sweet moments</h2>
+						<div class="description text-center">
+							<p class="fs-4" data-en="Hi, I'm Anett! I create custom cakes, pastries, and desserts that are as beautiful as they are delicious. Every creation is made with passion and attention to detail." data-ro="Bună, sunt Anett! Creez torturi personalizate, prăjituri și deserturi care sunt la fel de frumoase pe cât sunt de delicioase. Fiecare creație este făcută cu pasiune și atenție la detalii.">Hi, I'm Anett! I create custom cakes, pastries, and desserts that are as beautiful as they are delicious. Every creation is made with passion and attention to detail.</p>
+						</div>
+						<div class="text-center">
+							<a href="#contact" class="btn btn-primary px-5 py-3 mt-4" id="getInTouchBtn" data-en="Get in Touch" data-ro="Contactează-mă">Get in Touch</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section id="about" class="personal-info padding-large bg-primary">
+		<div class="container text-white text-white-50 ">
+			<div class="text-content text-center" data-aos="fade-up">
+				<div class="section-header">
+					<h3 class="section-title section-title-light display-6" data-en="About Me" data-ro="Despre Mine">About Me</h3>
+				</div>
+				<div class="description">
+					<p data-en="I'm Anett, a pastry chef with a deep love for the art of baking. From elegant wedding cakes to playful themed desserts, I pour creativity and care into every piece I make." data-ro="Sunt Anett, cofetar cu o dragoste profundă pentru arta patiseriei. De la torturi elegante de nuntă la deserturi tematice jucăușe, pun creativitate și grijă în fiecare piesă pe care o creez.">I'm Anett, a pastry chef with a deep love for the art of baking. From elegant wedding cakes to playful themed desserts, I pour creativity and care into every piece I make.</p>
+					<p data-en="Using quality ingredients and refined techniques, I craft desserts that delight both the eyes and the palate. Whether you're celebrating a milestone or simply craving something sweet, I'd love to create something special for you." data-ro="Folosind ingrediente de calitate și tehnici rafinate, creez deserturi care încântă atât ochii, cât și palatul. Fie că sărbătorești un moment important sau pur și simplu dorești ceva dulce, mi-ar plăcea să creez ceva special pentru tine.">Using quality ingredients and refined techniques, I craft desserts that delight both the eyes and the palate. Whether you're celebrating a milestone or simply craving something sweet, I'd love to create something special for you.</p>
+				</div>
+				<div class="btn-left mt-5">
+					<a href="#portfolio" class="btn btn-outline-light px-5 py-3" data-en="View My Works" data-ro="Vezi Lucrările Mele">View My Works</a>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section id="portfolio" class="padding-large">
+		<div class="container-fluid" data-aos="fade-up">
+			<div class="row">
+				<div class="section-header text-center">
+					<h3 class="section-title display-6" data-en="Portfolio" data-ro="Portofoliu">Portfolio</h3>
+					<p data-en="A selection of my creations" data-ro="O selecție din creațiile mele">A selection of my creations</p>
+				</div>
+			</div>
+
+				<div id="filters" class="button-group d-flex flex-wrap gap-4 justify-content-center pt-3 pb-5">
+					<a href="#" class="border border-black rounded-pill px-3 py-1 text-uppercase is-checked"
+						data-filter="*" data-en="All" data-ro="Toate">All</a>
+					<a href="#" class="border border-black rounded-pill px-3 py-1 text-uppercase"
+						data-filter=".cakes" data-en="Cakes" data-ro="Torturi">Cakes</a>
+					<a href="#" class="border border-black rounded-pill px-3 py-1 text-uppercase"
+						data-filter=".pastries" data-en="Pastries" data-ro="Prăjituri">Pastries</a>
+					<a href="#" class="border border-black rounded-pill px-3 py-1 text-uppercase"
+						data-filter=".breads" data-en="Breads" data-ro="Pâine">Breads</a>
+				</div>
+
+			<div class="grid p-0 clearfix row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+				<!-- Cakes (5) -->
+				<div class="col mb-4 portfolio-item cakes">
+					<a href="images/portofolio/torturi-purcelus.jpg" class="image-link" data-instagram=""
+						title="Piggy Cake" data-category="Cakes" data-description="A playful piggy-shaped cake with velvet spray finish — perfect for kids' birthdays and special celebrations."
+						data-en-title="Piggy Cake" data-ro-title="Tort Purceluș"
+						data-en-desc="A playful piggy-shaped cake with velvet spray finish — perfect for kids' birthdays and special celebrations." data-ro-desc="Un tort jucăuș în formă de purceluș cu finisaj catifea — perfect pentru zilele de naștere ale copiilor."
+						data-en-category="Cakes" data-ro-category="Torturi"><img src="images/portofolio/torturi-purcelus.jpg"
+							class="img-fluid" alt="Piggy Cake"></a>
+				</div>
+				<div class="col mb-4 portfolio-item cakes">
+					<a href="images/portofolio/torturi-flori.jpg" class="image-link" data-instagram=""
+						title="Flower Cake" data-category="Cakes" data-description="An elegant cake topped with fresh tulips, featuring a golden crumb coating. A stunning centerpiece for any occasion."
+						data-en-title="Flower Cake" data-ro-title="Tort cu Flori"
+						data-en-desc="An elegant cake topped with fresh tulips, featuring a golden crumb coating. A stunning centerpiece for any occasion." data-ro-desc="Un tort elegant decorat cu lalele proaspete și glazură aurie. O piesă centrală uimitoare pentru orice ocazie."
+						data-en-category="Cakes" data-ro-category="Torturi"><img src="images/portofolio/torturi-flori.jpg"
+							class="img-fluid" alt="Flower Cake"></a>
+				</div>
+				<div class="col mb-4 portfolio-item cakes">
+					<a href="images/portofolio/torturi-craciunita.jpg" class="image-link" data-instagram=""
+						title="Poinsettia Cake" data-category="Cakes" data-description="A sphere cake decorated with handcrafted sugar poinsettias — a festive holiday showstopper."
+						data-en-title="Poinsettia Cake" data-ro-title="Tort Crăciuniță"
+						data-en-desc="A sphere cake decorated with handcrafted sugar poinsettias — a festive holiday showstopper." data-ro-desc="Un tort sferă decorat cu crăciunițe din zahăr lucrate manual — spectacol festiv de sărbători."
+						data-en-category="Cakes" data-ro-category="Torturi"><img src="images/portofolio/torturi-craciunita.jpg"
+							class="img-fluid" alt="Poinsettia Cake"></a>
+				</div>
+				<div class="col mb-4 portfolio-item cakes">
+					<a href="images/portofolio/torturi-vaza-lalele.jpg" class="image-link" data-instagram=""
+						title="Tulip Vase Cake" data-category="Cakes" data-description="A pink textured sphere cake with pearl details, holding fresh tulips — art meets pastry."
+						data-en-title="Tulip Vase Cake" data-ro-title="Tort Vază cu Lalele"
+						data-en-desc="A pink textured sphere cake with pearl details, holding fresh tulips — art meets pastry." data-ro-desc="Un tort sferă roz texturat cu detalii din perle, cu lalele proaspete — arta întâlnește patiseria."
+						data-en-category="Cakes" data-ro-category="Torturi"><img src="images/portofolio/torturi-vaza-lalele.jpg"
+							class="img-fluid" alt="Tulip Vase Cake"></a>
+				</div>
+				<div class="col mb-4 portfolio-item cakes">
+					<a href="images/portofolio/torturi-inima.jpg" class="image-link" data-instagram=""
+						title="Heart Cake" data-category="Cakes" data-description="A velvety red heart cake with a rich mousse interior — the perfect gift for Valentine's Day or anniversaries."
+						data-en-title="Heart Cake" data-ro-title="Tort Inimă"
+						data-en-desc="A velvety red heart cake with a rich mousse interior — the perfect gift for Valentine's Day or anniversaries." data-ro-desc="Un tort în formă de inimă roșie catifelată cu interior de mousse — cadoul perfect pentru Ziua Îndrăgostiților."
+						data-en-category="Cakes" data-ro-category="Torturi"><img src="images/portofolio/torturi-inima.jpg"
+							class="img-fluid" alt="Heart Cake"></a>
+				</div>
+				<!-- Pastries (5) -->
+				<div class="col mb-4 portfolio-item pastries">
+					<a href="images/portofolio/prajituri-desert-pahar.jpg" class="image-link" data-instagram=""
+						title="Dessert in Glass" data-category="Pastries" data-description="A layered dessert with baba cake, cream, and citrus garnish — served in an elegant glass."
+						data-en-title="Dessert in Glass" data-ro-title="Desert în Pahar"
+						data-en-desc="A layered dessert with baba cake, cream, and citrus garnish — served in an elegant glass." data-ro-desc="Un desert stratificat cu babà, cremă și garnitură de citrice — servit într-un pahar elegant."
+						data-en-category="Pastries" data-ro-category="Prăjituri"><img src="images/portofolio/prajituri-desert-pahar.jpg"
+							class="img-fluid" alt="Dessert in Glass"></a>
+				</div>
+				<div class="col mb-4 portfolio-item pastries">
+					<a href="images/portofolio/prajituri-fig-negroni.jpg" class="image-link" data-instagram=""
+						title="Fig Negroni Sour" data-category="Pastries" data-description="A cocktail-inspired dessert featuring fig, citrus foam, and balsamic reduction — bold and sophisticated."
+						data-en-title="Fig Negroni Sour" data-ro-title="Fig Negroni Sour"
+						data-en-desc="A cocktail-inspired dessert featuring fig, citrus foam, and balsamic reduction — bold and sophisticated." data-ro-desc="Un desert inspirat din cocktailuri cu smochine, spumă de citrice și reducție de oțet balsamic — îndrăzneț și sofisticat."
+						data-en-category="Pastries" data-ro-category="Prăjituri"><img src="images/portofolio/prajituri-fig-negroni.jpg"
+							class="img-fluid" alt="Fig Negroni Sour"></a>
+				</div>
+				<div class="col mb-4 portfolio-item pastries">
+					<a href="images/portofolio/prajituri-madeleine.jpg" class="image-link" data-instagram=""
+						title="Shell Madeleines" data-category="Pastries" data-description="Delicate shell-shaped madeleines with a shimmering berry glaze and raspberry jam filling."
+						data-en-title="Shell Madeleines" data-ro-title="Madeleine Scoică"
+						data-en-desc="Delicate shell-shaped madeleines with a shimmering berry glaze and raspberry jam filling." data-ro-desc="Madeleine delicate în formă de scoică cu glazură strălucitoare de fructe de pădure și umplutură de gem de zmeură."
+						data-en-category="Pastries" data-ro-category="Prăjituri"><img src="images/portofolio/prajituri-madeleine.jpg"
+							class="img-fluid" alt="Shell Madeleines"></a>
+				</div>
+				<div class="col mb-4 portfolio-item pastries">
+					<a href="images/portofolio/prajituri-tarta-lamaie.jpg" class="image-link" data-instagram=""
+						title="Lemon Meringue Tart" data-category="Pastries" data-description="A classic lemon meringue tart with torched Swiss meringue peaks on a buttery crust."
+						data-en-title="Lemon Meringue Tart" data-ro-title="Tartă cu Lămâie și Bezea"
+						data-en-desc="A classic lemon meringue tart with torched Swiss meringue peaks on a buttery crust." data-ro-desc="O tartă clasică cu lămâie și bezea elvețiană flambată pe o crustă unsuroasă."
+						data-en-category="Pastries" data-ro-category="Prăjituri"><img src="images/portofolio/prajituri-tarta-lamaie.jpg"
+							class="img-fluid" alt="Lemon Meringue Tart"></a>
+				</div>
+				<div class="col mb-4 portfolio-item pastries">
+					<a href="images/portofolio/prajituri-bol-salata.jpg" class="image-link" data-instagram=""
+						title="Colorful Salad Bowl" data-category="Pastries" data-description="A vibrant mix of fresh vegetables, nuts, and citrus — a refreshing accompaniment to any pastry spread."
+						data-en-title="Colorful Salad Bowl" data-ro-title="Bol de Salată Colorată"
+						data-en-desc="A vibrant mix of fresh vegetables, nuts, and citrus — a refreshing accompaniment to any pastry spread." data-ro-desc="Un amestec vibrant de legume proaspete, nuci și citrice — un acompaniament răcoritor pentru orice aranjament de patiserie."
+						data-en-category="Pastries" data-ro-category="Prăjituri"><img src="images/portofolio/prajituri-bol-salata.jpg"
+							class="img-fluid" alt="Colorful Salad Bowl"></a>
+				</div>
+				<!-- Breads (5) -->
+				<div class="col mb-4 portfolio-item breads">
+					<a href="images/portofolio/paine-bruschette.jpg" class="image-link" data-instagram=""
+						title="Gourmet Bruschetta" data-category="Breads" data-description="Toasted crostini topped with roasted pumpkin, olives, walnuts, and fresh rosemary."
+						data-en-title="Gourmet Bruschetta" data-ro-title="Bruschette Gourmet"
+						data-en-desc="Toasted crostini topped with roasted pumpkin, olives, walnuts, and fresh rosemary." data-ro-desc="Crostini prăjite cu dovleac copt, măsline, nuci și rozmarin proaspăt."
+						data-en-category="Breads" data-ro-category="Pâine"><img src="images/portofolio/paine-bruschette.jpg"
+							class="img-fluid" alt="Gourmet Bruschetta"></a>
+				</div>
+				<div class="col mb-4 portfolio-item breads">
+					<a href="images/portofolio/paine-bol-morcov.jpg" class="image-link" data-instagram=""
+						title="Carrot Walnut Bowl" data-category="Breads" data-description="Shredded carrot and pumpkin salad with crunchy walnuts — a healthy side dish."
+						data-en-title="Carrot Walnut Bowl" data-ro-title="Bol cu Morcov și Nuci"
+						data-en-desc="Shredded carrot and pumpkin salad with crunchy walnuts — a healthy side dish." data-ro-desc="Salată de morcov ras și dovleac cu nuci crocante — o garnitură sănătoasă."
+						data-en-category="Breads" data-ro-category="Pâine"><img src="images/portofolio/paine-bol-morcov.jpg"
+							class="img-fluid" alt="Carrot Walnut Bowl"></a>
+				</div>
+				<div class="col mb-4 portfolio-item breads">
+					<a href="images/portofolio/paine-tocanita.jpg" class="image-link" data-instagram=""
+						title="Rustic Stew with Bread" data-category="Breads" data-description="A hearty rustic stew with root vegetables, served with toasted artisan bread."
+						data-en-title="Rustic Stew with Bread" data-ro-title="Tocăniță Rustică cu Pâine"
+						data-en-desc="A hearty rustic stew with root vegetables, served with toasted artisan bread." data-ro-desc="O tocăniță rustică consistentă cu legume rădăcinoase, servită cu pâine artizanală prăjită."
+						data-en-category="Breads" data-ro-category="Pâine"><img src="images/portofolio/paine-tocanita.jpg"
+							class="img-fluid" alt="Rustic Stew with Bread"></a>
+				</div>
+				<div class="col mb-4 portfolio-item breads">
+					<a href="images/portofolio/paine-bol-exploziv.jpg" class="image-link" data-instagram=""
+						title="Exploding Bowl" data-category="Breads" data-description="A dynamic food composition with fresh ingredients, mozzarella, and herbs bursting from a bowl."
+						data-en-title="Exploding Bowl" data-ro-title="Bol Exploziv"
+						data-en-desc="A dynamic food composition with fresh ingredients, mozzarella, and herbs bursting from a bowl." data-ro-desc="O compoziție dinamică cu ingrediente proaspete, mozzarella și ierburi aromatice."
+						data-en-category="Breads" data-ro-category="Pâine"><img src="images/portofolio/paine-bol-exploziv.jpg"
+							class="img-fluid" alt="Exploding Bowl"></a>
+				</div>
+				<div class="col mb-4 portfolio-item breads">
+					<a href="images/portofolio/paine-arome-zburatoare.jpg" class="image-link" data-instagram=""
+						title="Flying Flavors" data-category="Breads" data-description="Seasoned chicken bites with basil, peppers, and spices captured in a dynamic flying composition."
+						data-en-title="Flying Flavors" data-ro-title="Arome Zburătoare"
+						data-en-desc="Seasoned chicken bites with basil, peppers, and spices captured in a dynamic flying composition." data-ro-desc="Bucăți de pui condimentate cu busuioc, ardei și mirodenii într-o compoziție dinamică."
+						data-en-category="Breads" data-ro-category="Pâine"><img src="images/portofolio/paine-arome-zburatoare.jpg"
+							class="img-fluid" alt="Flying Flavors"></a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Portfolio Detail Modal -->
+	<div class="modal fade" id="portfolioModal" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" style="max-width: 75vw; max-height: 75vh;">
+			<div class="modal-content" style="border: none; overflow: hidden; position: relative; border-radius: 0;">
+				<div id="modalBg" style="position: absolute; top: -20px; left: -20px; right: -20px; bottom: -20px; background-size: cover; background-position: center; filter: blur(30px) brightness(0.7); z-index: 0;"></div>
+				<div class="modal-body p-0" style="position: relative; z-index: 1;">
+					<button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close" style="z-index: 10;"></button>
+					<div class="row g-0">
+						<div class="col-md-auto">
+							<img id="modalImage" src="" class="img-fluid" alt="" style="max-height: 75vh; display: block;">
+						</div>
+						<div class="col d-flex align-items-center text-white">
+							<div class="p-4">
+								<span id="modalCategory" class="text-uppercase small" style="opacity: 0.7;"></span>
+								<h3 id="modalTitle" class="mt-2 mb-3" style="font-family: var(--heading-font);"></h3>
+								<p id="modalDescription" style="opacity: 0.85;"></p>
+								<div class="d-flex gap-3 mt-4">
+									<button class="btn btn-outline-light d-flex align-items-center gap-2 like-btn">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.16 4.61A6.27 6.27 0 0 0 12 4a6.27 6.27 0 0 0-8.16 9.48l7.45 7.45a1 1 0 0 0 1.42 0l7.45-7.45a6.27 6.27 0 0 0 0-8.87Z"/></svg>
+										<span class="like-count">0</span>
+									</button>
+									<button class="btn btn-outline-light d-flex align-items-center gap-2 comment-btn">
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+										<span data-en="Comment" data-ro="Comentariu">Comment</span>
+									</button>
+								</div>
+								<div class="comment-section mt-3" style="display: none;">
+									<div class="comment-list mb-2 text-white"></div>
+									<div class="input-group">
+										<input type="text" class="form-control bg-transparent border-light text-white comment-input" data-en-placeholder="Write a comment..." data-ro-placeholder="Scrie un comentariu..." placeholder="Write a comment...">
+										<button class="btn btn-light comment-submit" data-en="Post" data-ro="Postează">Post</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section id="services" class="padding-large bg-primary">
+		<div class="container text-white text-white-50">
+			<div class="section-header text-center">
+				<h3 class="section-title section-title-light display-6 border-white" data-en="Services" data-ro="Servicii">Services</h3>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<div class="py-md-3">
+						<svg class="text-secondary" width="50" height="50">
+							<use xlink:href="#cake"></use>
+						</svg>
+						<h4 class="text-capitalize my-3" data-en="Custom Cakes" data-ro="Torturi Personalizate">Custom Cakes</h4>
+						<p data-en="Unique, made-to-order cakes designed to match your vision and taste perfectly." data-ro="Torturi unice, la comandă, create să se potrivească perfect viziunii și gustului tău.">Unique, made-to-order cakes designed to match your vision and taste perfectly.</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="py-md-3">
+						<svg class="text-secondary" width="50" height="50">
+							<use xlink:href="#cookie"></use>
+						</svg>
+						<h4 class="text-capitalize my-3" data-en="Pastries & Tarts" data-ro="Prăjituri & Tarte">Pastries & Tarts</h4>
+						<p data-en="Delicate pastries and tarts crafted with premium ingredients and classic techniques." data-ro="Prăjituri și tarte delicate, realizate cu ingrediente premium și tehnici clasice.">Delicate pastries and tarts crafted with premium ingredients and classic techniques.</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="py-md-3">
+						<svg class="text-secondary" width="50" height="50">
+							<use xlink:href="#random-3"></use>
+						</svg>
+						<h4 class="text-capitalize my-3" data-en="Cookies & Petit Fours" data-ro="Fursecuri & Petit Fours">Cookies & Petit Fours</h4>
+						<p data-en="Beautifully decorated cookies and bite-sized treats for gifts and events." data-ro="Fursecuri frumos decorate și delicatese miniaturale pentru cadouri și evenimente.">Beautifully decorated cookies and bite-sized treats for gifts and events.</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="py-md-3">
+						<svg class="text-secondary" width="50" height="50">
+							<use xlink:href="#heart"></use>
+						</svg>
+						<h4 class="text-capitalize my-3" data-en="Wedding Cakes" data-ro="Torturi de Nuntă">Wedding Cakes</h4>
+						<p data-en="Stunning wedding cakes that make your special day even more memorable." data-ro="Torturi de nuntă spectaculoase care fac ziua ta specială și mai memorabilă.">Stunning wedding cakes that make your special day even more memorable.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<div class="py-md-3">
+						<svg class="text-secondary" width="50" height="50">
+							<use xlink:href="#gift"></use>
+						</svg>
+						<h4 class="text-capitalize my-3" data-en="Celebration Cakes" data-ro="Torturi Festive">Celebration Cakes</h4>
+						<p data-en="Birthday, anniversary, or any milestone — a cake to make the occasion unforgettable." data-ro="Ziua de naștere, aniversare sau orice moment important — un tort care face ocazia de neuitat.">Birthday, anniversary, or any milestone — a cake to make the occasion unforgettable.</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="py-md-3">
+						<svg class="text-secondary" width="50" height="50">
+							<use xlink:href="#random-4"></use>
+						</svg>
+						<h4 class="text-capitalize my-3" data-en="Dessert Catering" data-ro="Catering Deserturi">Dessert Catering</h4>
+						<p data-en="Full dessert spreads for parties and gatherings, tailored to your event's theme." data-ro="Aranjamente complete de deserturi pentru petreceri și evenimente, adaptate temei tale.">Full dessert spreads for parties and gatherings, tailored to your event's theme.</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="py-md-3">
+						<svg class="text-secondary" width="50" height="50">
+							<use xlink:href="#random-7"></use>
+						</svg>
+						<h4 class="text-capitalize my-3" data-en="Corporate Events" data-ro="Evenimente Corporate">Corporate Events</h4>
+						<p data-en="Professional dessert solutions for corporate functions, launches, and conferences." data-ro="Soluții profesionale de deserturi pentru funcții corporative, lansări și conferințe.">Professional dessert solutions for corporate functions, launches, and conferences.</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="py-md-3">
+						<svg class="text-secondary" width="50" height="50">
+							<use xlink:href="#random-5"></use>
+						</svg>
+						<h4 class="text-capitalize my-3" data-en="Seasonal Specials" data-ro="Specialități de Sezon">Seasonal Specials</h4>
+						<p data-en="Limited-edition creations for holidays and seasonal celebrations throughout the year." data-ro="Creații în ediție limitată pentru sărbători și celebrări sezoniere pe tot parcursul anului.">Limited-edition creations for holidays and seasonal celebrations throughout the year.</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section id="contact" class="contact-detail padding-large">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-md-6">
+					<img src="images/contactimg.png" alt="contact" class="img-fluid">
+				</div>
+				<div class="col-md-6 detail-content py-5 py-lg-0">
+					<div class="text-content">
+						<div class="section-header">
+							<h2 class="section-title" data-en="Get in Touch" data-ro="Contactează-mă">Get in Touch</h2>
+						</div>
+
+						<p><span data-en="Have a special occasion coming up?" data-ro="Ai o ocazie specială?">Have a special occasion coming up?</span><br><span data-en="I'd love to hear about it and create something sweet for you." data-ro="Mi-ar plăcea să aud despre ea și să creez ceva dulce pentru tine.">I'd love to hear about it and create something sweet for you.</span></p>
+
+						<form id="form" class="form-group" action="#" method="post">
+							<div class="text-input row">
+								<div class="col-md-6 mb-3">
+									<input type="text" name="name"
+										class="form-control bg-transparent border border-black shadow-none"
+										placeholder="Your name" data-en-placeholder="Your name" data-ro-placeholder="Numele tău" required>
+								</div>
+								<div class="col-md-6 mb-3">
+									<input type="email" name="email"
+										class="form-control bg-transparent border border-black shadow-none"
+										placeholder="Your email" data-en-placeholder="Your email" data-ro-placeholder="Email-ul tău" required>
+								</div>
+								<div class="col-md-12 mb-3">
+									<textarea name="message" placeholder="Tell me about your event or order"
+										class="form-control bg-transparent border border-black shadow-none" rows="6"
+										data-en-placeholder="Tell me about your event or order" data-ro-placeholder="Spune-mi despre evenimentul sau comanda ta"
+										required></textarea>
+								</div>
+							</div>
+							<div class="btn-left">
+								<button type="submit" class="btn btn-primary px-5 py-3" data-en="Send Message" data-ro="Trimite Mesaj">Send Message</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer id="footer" class="bg-primary">
+		<div class="container padding-large text-white text-white-50">
+			<div class="row">
+				<div class="footer-menu col-md-4 text-center d-flex flex-column align-items-center justify-content-center">
+					<h3 class="widget-title section-title-light" data-en="Get In Touch" data-ro="Contactează-mă">Get In Touch</h3>
+					<div class="d-flex gap-2 align-items-center">
+						<a href="mailto:me@anettbakes.com">me@anettbakes.com</a>
+						<span>|</span>
+						<a href="https://wa.me/40728809470" target="_blank">whatsappme</a>
+					</div>
+				</div>
+				<div class="footer-menu col-md-4 text-center d-flex flex-column align-items-center justify-content-center">
+					<h3 class="widget-title section-title-light" data-en="Follow Me" data-ro="Urmărește-mă">Follow Me</h3>
+					<div class="d-flex gap-4">
+						<a href="#"><svg width="30" height="30"><use xlink:href="#instagram"></use></svg></a>
+						<a href="#"><svg width="30" height="30"><use xlink:href="#facebook"></use></svg></a>
+					</div>
+				</div>
+				<div class="footer-menu col-md-4 text-center d-flex flex-column align-items-center justify-content-center">
+					<h3 class="widget-title section-title-light" data-en="Quick Links" data-ro="Link-uri Rapide">Quick Links</h3>
+					<div class="d-flex gap-2">
+						<a href="#portfolio" data-en="Portfolio" data-ro="Portofoliu">Portfolio</a>
+						<span>|</span>
+						<a href="#services" data-en="Services" data-ro="Servicii">Services</a>
+						<span>|</span>
+						<a href="#contact" data-en="Contact" data-ro="Contact">Contact</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom border-top">
+			<div class="container text-white text-white-50">
+				<div class="copyright text-center py-4">
+					<p class="m-0" data-en="© 2026 Anett Bakes. All rights reserved." data-ro="© 2026 Anett Bakes. Toate drepturile rezervate.">&copy; 2026 Anett Bakes. All rights reserved.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+		crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/plugins.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+</html>
