@@ -13,6 +13,7 @@
 	<meta name="description" content="Anett Bakes - Pastry chef crafting custom cakes, pastries, and desserts for every occasion.">
 
 	<link rel="icon" type="image/svg+xml" href="images/icons/favicon.svg">
+	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 	<link rel="icon" type="image/png" href="images/icons/favicon.png">
 	<link rel="apple-touch-icon" href="images/icons/favicon.png">
 
@@ -570,6 +571,13 @@
 	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 	<script type="text/javascript" src="js/plugins.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
+	<script>
+		if (window.netlifyIdentity) {
+			window.netlifyIdentity.on("init", function(user) {
+				if (!user) { window.netlifyIdentity.on("login", function() { document.location.href = "/admin/"; }); }
+			});
+		}
+	</script>
 
 </body>
 
